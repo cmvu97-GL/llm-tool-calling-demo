@@ -68,7 +68,7 @@ user_query = "What is the weather in Prague?"
 print(f"User: {user_query}")
 
 response = client.models.generate_content(
-    model="gemini-1.5-flash",
+    model="models/gemini-2.5-flash",
     contents=user_query,
     config=config,
 )
@@ -102,7 +102,7 @@ if response.candidates[0].content.parts[0].function_call:
     
     # Pošli výsledek zpět LLM
     final_response = client.models.generate_content(
-        model="gemini-1.5-flash",
+        model="models/gemini-2.5-flash",
         contents=[
             types.Content(
                 role="user",
