@@ -1,0 +1,35 @@
+# API klíče a citlivé informace
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+```
+
+**Proč to tam dát:**
+- `venv/` - virtuální prostředí (velké, zbytečné na GitHubu)
+- `__pycache__/` - Python cache soubory
+- `.vscode/`, `.idea/` - nastavení editoru (každý má jiné)
+- `*.log` - log soubory
+
+---
